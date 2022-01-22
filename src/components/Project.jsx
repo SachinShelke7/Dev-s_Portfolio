@@ -31,6 +31,13 @@ const projects = [
       link: 'https://hulu2-0-rosy.vercel.app/'
     },
   ];
+const challenges = [
+    {
+      name: 'Huddle landing page with a single introductory section',
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/images/fb.png?raw=true',
+      link: 'https://facebook-clone-psi-seven.vercel.app/'
+    },
+  ];
 
 
 const Project = () => {
@@ -40,6 +47,12 @@ const Project = () => {
                 <StoryCard key={project.name} name={project.name} src={project.src} detail={project.detail} tech={project.tech} link={project.link}/>
             ))}
         </div>
+      <div className='flex flex-col justify-center mx-auto w-full px-32'>
+            {challenges.map((challenge) => (
+                <Mentor key={challenge.name} name={challenge.name} src={challenge.src} link={challenge.link}/>
+            ))}
+        </div>
+
   </div>;
 };
 
