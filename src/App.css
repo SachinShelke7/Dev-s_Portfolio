@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+ion-icon  {
+  color: #0b171f;
+}
+ion-icon:hover  {
+  color: #0099ff;
+}
