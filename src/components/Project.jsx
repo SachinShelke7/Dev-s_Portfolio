@@ -1,5 +1,6 @@
 import React from 'react';
 import StoryCard from './StoryCard.jsx'
+import Mentor from './Mentor.jsx'
 
 const projects = [
     {
@@ -34,20 +35,48 @@ const projects = [
 const challenges = [
     {
       name: 'Huddle landing page with a single introductory section',
-      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/images/fb.png?raw=true',
-      link: 'https://facebook-clone-psi-seven.vercel.app/'
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
+      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
+    },
+    {
+      name: 'Huddle landing page with a single introductory section',
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
+      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
+    },
+    {
+      name: 'Huddle landing page with a single introductory section',
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
+      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
+    },
+    {
+      name: 'Huddle landing page with a single introductory section',
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
+      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
+    },
+    {
+      name: 'Huddle landing page with a single introductory section',
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
+      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
+    },
+    {
+      name: 'Huddle landing page with a single introductory section',
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
+      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
     },
   ];
 
 
 const Project = () => {
-  return <div>
+  return <div className='bg-gray-200'>
       <div className='flex flex-col justify-center mx-auto w-full px-32'>
             {projects.map((project) => (
                 <StoryCard key={project.name} name={project.name} src={project.src} detail={project.detail} tech={project.tech} link={project.link}/>
             ))}
         </div>
-      <div className='flex flex-col justify-center mx-auto w-full px-32'>
+        <div>
+          <h1 className='text-center text-4xl font-bold py-20 text-white'>FrontEnd Mentor Challenges</h1>
+        </div>
+      <div className='flex flex-wrap justify-between w-full px-28'>
             {challenges.map((challenge) => (
                 <Mentor key={challenge.name} name={challenge.name} src={challenge.src} link={challenge.link}/>
             ))}

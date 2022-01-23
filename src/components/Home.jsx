@@ -4,11 +4,11 @@ import HomePNG from "../assets/illustrations/HomePNG.png";
 const Home = () => {
   
   return (
-    <div className="px-10 pt-28">
+    <div className="px-10 pt-28 bg-gray-200 text-[#1e1f24]">
       <div className="flex justify-between w-full items-center">
         <div className="w-1/2 box-content">
-          <h1 className="text-6xl font-extrabold font-serif text-[#0b171f]">SACHIN SHELKE</h1>
-          <p className="text-gray-600">
+          <h1 className="text-6xl font-extrabold font-serif">SACHIN SHELKE</h1>
+          <p className="">
             I have been learning Frontend Technologies for last 6 months. Thave
             done graduation in B.B.A. As I'm learning frontend technologies have
             build 10+ projects in various web technologies including ReactJS,
@@ -26,11 +26,11 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-4xl font-bold font-serif text-center pt-10 text-gray-900">What I Do ?</h1>
+        <h1 className="text-4xl font-bold font-serif text-center pt-10">What I Do ?</h1>
      <div className="flex justify-between items-center">
-       <div>ILLUSTRATION</div>
+       <div className="">ILLUSTRATION</div>
        <div>
-         <h1 className="text-4xl font-bold text-gray-800">Frontend Developer</h1>
+         <h1 className="text-4xl font-bold">Frontend Developer</h1>
        </div>
      </div>
       </div>
