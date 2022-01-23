@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Project from "./components/Project";
 import BG from './assets/images/main.jpg'
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           }
         />
       </Routes>
+      <Footer />
     </Router>
   );
 }

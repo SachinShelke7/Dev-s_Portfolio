@@ -74,7 +74,7 @@ const Project = () => {
             ))}
         </div>
         <div>
-          <h1 className='text-center text-4xl font-bold py-20 text-white'>FrontEnd Mentor Challenges</h1>
+          <h1 className='text-center text-4xl font-bold py-20 text-[#1e1f24] -mb-10'>FrontEnd Mentor Challenges</h1>
         </div>
       <div className='flex flex-wrap justify-between w-full px-28'>
             {challenges.map((challenge) => (

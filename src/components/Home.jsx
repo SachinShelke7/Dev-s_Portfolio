@@ -1,5 +1,6 @@
 import React from "react";
 import HomePNG from "../assets/illustrations/HomePNG.png";
+import Softs from "./Softs";
 import Technologies from "./Technologies";
 
 const technologies = [
@@ -35,11 +36,11 @@ const technologies = [
 const softs = [
   {
     name: 'VSCODE',
-    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/1.png?raw=true',
+    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/vs.png?raw=true',
   },
   {
     name: 'Adobe Photoshop',
-    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/2.png?raw=true',
+    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/ps.png?raw=true',
   },
 ];
 
@@ -68,14 +69,25 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-4xl font-bold font-serif text-center pt-10">What I Do ?</h1>
+        <h1 className="text-3xl font-bold font-serif text-center py-14">What I Do ?</h1>
      <div className="flex justify-between items-center">
        <div className="w-full">
-         <h1 className="text-4xl font-bold text-center">Frontend Developer</h1>
+         <h1 className="text-4xl font-bold text-center">Frontend Web Development</h1>
 
-       <div className='flex flex-wrap'>
+         <div>
+          <h1 className="text-3xl font-bold font-serif pt-20 text-center">Languages & Frameworks </h1>
+        </div>
+       <div className='flex flex-wrap w-full justify-center'>
             {technologies.map((technology) => (
                 <Technologies key={technology.name} name={technology.name} src={technology.src} />
+            ))}
+        </div>
+        <div>
+          <h1 className="text-3xl font-bold font-serif text-center">Softwares </h1>
+        </div>
+       <div className='flex flex-wrap w-full justify-center'>
+            {softs.map((soft) => (
+                <Softs key={soft.name} name={soft.name} src={soft.src} />
             ))}
         </div>
         </div>
