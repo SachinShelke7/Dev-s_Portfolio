@@ -1,5 +1,47 @@
 import React from "react";
 import HomePNG from "../assets/illustrations/HomePNG.png";
+import Technologies from "./Technologies";
+
+const technologies = [
+  {
+    name: 'HTML',
+    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/1.png?raw=true',
+  },
+  {
+    name: 'CSS',
+    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/2.png?raw=true',
+  },
+  {
+    name: 'Tailwind CSS',
+    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/3.png?raw=true',
+  },
+  {
+    name: 'JAVASCRIPT',
+    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/4.png?raw=true',
+  },
+  {
+    name: 'React.JS',
+    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/5.png?raw=true',
+  },
+  {
+    name: 'Next.JS',
+    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/6.png?raw=true',
+  },
+  {
+    name: 'Firebase',
+    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/7.png?raw=true',
+  },
+];
+const softs = [
+  {
+    name: 'VSCODE',
+    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/1.png?raw=true',
+  },
+  {
+    name: 'Adobe Photoshop',
+    src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/icons/2.png?raw=true',
+  },
+];
 
 const Home = () => {
   
@@ -28,10 +70,15 @@ const Home = () => {
       <div>
         <h1 className="text-4xl font-bold font-serif text-center pt-10">What I Do ?</h1>
      <div className="flex justify-between items-center">
-       <div className="">ILLUSTRATION</div>
-       <div>
-         <h1 className="text-4xl font-bold">Frontend Developer</h1>
-       </div>
+       <div className="w-full">
+         <h1 className="text-4xl font-bold text-center">Frontend Developer</h1>
+
+       <div className='flex flex-wrap'>
+            {technologies.map((technology) => (
+                <Technologies key={technology.name} name={technology.name} src={technology.src} />
+            ))}
+        </div>
+        </div>
      </div>
       </div>
     </div>
