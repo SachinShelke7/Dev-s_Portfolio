@@ -1,5 +1,5 @@
 import React from 'react';
-import StoryCard from './StoryCard.jsx'
+import Projects from './Projects.jsx'
 import Mentor from './Mentor.jsx'
 
 const projects = [
@@ -35,48 +35,48 @@ const projects = [
 const challenges = [
     {
       name: 'Huddle landing page with a single introductory section',
-      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
-      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/images/huddle.png?raw=true',
+      link: 'https://jolly-golick-5ac346.netlify.app/'
     },
     {
-      name: 'Huddle landing page with a single introductory section',
-      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
-      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
+      name: 'NFT preview card component',
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/images/card.png?raw=true',
+      link: 'https://optimistic-hugle-868751.netlify.app/'
     },
     {
-      name: 'Huddle landing page with a single introductory section',
-      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
-      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
+      name: 'Single price grid component',
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/images/grid2.png?raw=true',
+      link: 'https://lucid-montalcini-a2bdcd.netlify.app/'
     },
     {
-      name: 'Huddle landing page with a single introductory section',
-      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
-      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
+      name: 'Testimonials grid section',
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/images/grid.png?raw=true',
+      link: 'https://happy-raman-7f10c6.netlify.app/'
     },
     {
-      name: 'Huddle landing page with a single introductory section',
-      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
-      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
+      name: 'Four card feature section',
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/images/4card.png?raw=true',
+      link: 'https://gifted-colden-c48807.netlify.app/'
     },
     {
-      name: 'Huddle landing page with a single introductory section',
-      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/Frontend%20Mentor/01.png?raw=true',
-      link: 'https://sachinshelke7.github.io/Huddle-Challenge-FrontEnd-Mentor/'
+      name: 'Clipboard landing page',
+      src: 'https://github.com/SachinShelke7/Dev-s_Portfolio/blob/main/src/assets/images/landing.png?raw=true',
+      link: 'https://hopeful-lovelace-27c5f4.netlify.app/'
     },
   ];
 
 
 const Project = () => {
   return <div className='bg-gray-200'>
-      <div className='flex flex-col justify-center mx-auto w-full px-32'>
+      <div className='flex flex-col justify-center mx-auto w-full px-12 md:px-32'>
             {projects.map((project) => (
-                <StoryCard key={project.name} name={project.name} src={project.src} detail={project.detail} tech={project.tech} link={project.link}/>
+                <Projects key={project.name} name={project.name} src={project.src} detail={project.detail} tech={project.tech} link={project.link}/>
             ))}
         </div>
         <div>
           <h1 className='text-center text-4xl font-bold py-20 text-[#1e1f24] -mb-10'>FrontEnd Mentor Challenges</h1>
         </div>
-      <div className='flex flex-wrap justify-between w-full px-28'>
+      <div className='flex flex-wrap justify-center md:justify-between w-full px-12 md:px-28'>
             {challenges.map((challenge) => (
                 <Mentor key={challenge.name} name={challenge.name} src={challenge.src} link={challenge.link}/>
             ))}

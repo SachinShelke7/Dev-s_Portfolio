@@ -5,7 +5,7 @@ const Technologies = ({ src, name, link}) => {
     
   return (
     <div>
-      <div className="w-[150px] cursor-pointer transition bg-white m-10 pb-6 rounded-lg shadow-xl hover:scale-105 transform duration-200">
+      <div className="w-[150px] cursor-pointer transition bg-white m-2 md:m-10 mt-10 md:mt-10 pb-6 rounded-lg shadow-xl hover:scale-105 transform duration-200">
           <div className="w-full flex justify-center items-center pt-2">
           <img
           className="object-cover h-[100px] rounded-t-lg"

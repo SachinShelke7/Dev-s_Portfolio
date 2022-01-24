@@ -38,8 +38,10 @@
 }
 
 ion-icon  {
-  color: #e7e7e7;
+  color: #8a8a8a;
 }
+
 ion-icon:hover  {
-  color: #ffffff;
+  color: #1e1f24;
 }
+
