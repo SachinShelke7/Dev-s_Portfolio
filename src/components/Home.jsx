@@ -2,6 +2,7 @@ import React from "react";
 import HomePNG from "../assets/illustrations/HomePNG.png";
 import Softs from "./Softs";
 import Technologies from "./Technologies";
+import homeLogo from '../assets/illustrations/home.svg'
 
 const technologies = [
   {
@@ -48,13 +49,13 @@ const Home = () => {
   
   return (
     <div className="px-10 pt-28 bg-gray-200 text-[#1e1f24]">
-      <div className="flex justify-between w-full items-center">
-        <div className="w-1/2 box-content">
+      <div className="flex flex-col md:flex-row justify-between w-full items-center">
+        <div className="md:w-1/2 box-content">
           <h1 className="text-6xl font-extrabold font-serif">SACHIN SHELKE</h1>
           <p className="">
-            I have been learning Frontend Technologies for last 6 months. Thave
+            I have been learning Frontend Technologies for last 6 months.I have
             done graduation in B.B.A. As I'm learning frontend technologies have
-            build 10+ projects in various web technologies including ReactJS,
+            build 15+ projects in various web technologies including ReactJS,
             Next.JS, Tailwind CSS, CSS. I'm continuous learner and enthusiast to
             learn new technologies.
           </p>
@@ -65,7 +66,7 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <img src={HomePNG} alt="" className="w-full" />
+          <img src={homeLogo} alt="" className="w-full flex items-center justify-center" />
         </div>
       </div>
       <div>
